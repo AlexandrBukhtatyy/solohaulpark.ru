@@ -80,19 +80,17 @@ body {
 /************ Logo ************/
 .logo {}
 .logo_icon {
+    display: none;
     height: 50px;
 }
 .logo_title {
-    display: none;
     width: 100px;
 }
 
 @media (min-width: 576px) {
     .logo_icon {
-        margin-right: 20px;
-    }
-    .logo_title {
         display: inline-block;
+        margin-right: 20px;
     }
 }
 @media (min-width: 768px) {
