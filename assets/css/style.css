@@ -11,13 +11,51 @@
     src: url('../fonts/Montserrat-SemiBold.ttf');
 }
 
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 1.1em;
+}
+h1 {
+    font-size: 56px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 24px;
+}
+p {
+    line-height: 1.3em;
+    margin: 0px 0px 1em 0px;
+}
 
 /************ Base ************/
 html,
 body {
+    height: 100%;
+    min-height: 100%;
     font-family: 'Montserrat';
     line-height: 1.2em;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
+.header, .footer {
+    flex-shrink: 0;
+}
+.content {
+    flex-grow: 1;
+}
+/*body {*/
+    /*-webkit-touch-callout: none; /* iOS Safari */
+    /*-webkit-user-select: none; /* Safari */
+    /*-khtml-user-select: none; /* Konqueror HTML */
+    /*-moz-user-select: none; /* Old versions of Firefox */
+    /*-ms-user-select: none; /* Internet Explorer/Edge */
+    /*user-select: none; /* Non-prefixed version, currently */
+/*}*/
 
 
 /************ Common ************/
@@ -80,13 +118,20 @@ body {
 /************ Logo ************/
 .logo {}
 .logo_icon {
-    display: none;
     height: 50px;
 }
 .logo_title {
+    display: none;
     width: 100px;
 }
-
+@media (min-width: 450px) {
+    .logo_icon {
+        display: none;
+    }
+    .logo_title {
+        display: inline-block;
+    }
+}
 @media (min-width: 576px) {
     .logo_icon {
         display: inline-block;
@@ -145,13 +190,28 @@ body {
     display: none;
     align-items: stretch;
     height: 100%;
+    color: white;
 }
+/*
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    align-self: auto;
+    justify-content: center;
+    box-shadow: 0px 4px 4px #00000026;
+    z-index: 0;
+    color: #000;
+*/
 
 .menu_item {
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
-    color:  #fff;
+    color: inherit;
     font-size: 15px;
     height: 100%;
     align-items: center;
@@ -246,8 +306,7 @@ body {
     }
 }
 
-@media (min-width: 1400px) {
-}
+@media (min-width: 1400px) {}
 
 
 /************ BURGER ************/
@@ -346,3 +405,126 @@ body {
 @media (min-width: 1200px) {}
 
 @media (min-width: 1400px) {}
+
+
+
+
+/************ FOOTER ************/
+.footer {
+    color: #FFFFFF;
+    background-color: #1C222C;
+}
+
+.footer .address,
+.footer .office-hours {
+    text-align: center;
+}
+
+.footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .col:not(:last-child) {
+    margin-bottom: 36px;
+}
+.footer .col.col--special {
+    min-width: 290px;
+}
+
+.footer .link-wrapper {
+    margin-bottom: 18px;
+}
+
+.footer .link:hover {
+    color: #27AE60;
+}
+
+.footer .phone {
+    color: #27AE60;
+    margin-bottom: 36px;
+}
+
+.footer .phone .phone_number {
+    font-size: 32px;
+}
+
+.footer .phone:hover {
+    color: #27AE60;
+}
+
+.footer .title.title--socials,
+.footer .title.title--payment-methods{
+    margin-bottom: 14px;
+}
+
+.footer_first {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #828282;
+}
+
+.footer_second {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.footer_second .link {
+    color: #828282;
+}
+.footer_second .link:hover {
+    color: #FFF;
+}
+.footer_second .link:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.footer_first .container,
+.footer_second .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .footer .address,
+    .footer .office-hours {
+        text-align: left;
+    }
+    .footer .col {
+        align-items: flex-start;
+    }
+    .footer_first .container,
+    .footer_second .container {
+        flex-direction: row;
+    }
+    .footer_second .link:not(:last-child) {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1400px) {}
+/************ SOCIALS ************/
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 36px;
+}
+
+
+/************ PAYMENT-METHODS ************/
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+}
