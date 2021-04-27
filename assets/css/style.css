@@ -408,6 +408,47 @@ body {
 
 
 
+/************ Transfer ************/
+.transfer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    background-color: #27AE60;
+}
+.transfer .container {
+    display: flex;
+    align-items: center;
+}
+.transfer_content {
+    display: flex;
+    flex-grow: 1;
+}
+.transfer_logo {
+    margin-right: 30px;
+}
+.transfer_description {
+    max-width: 470px;
+}
+.transfer_description .title{
+    margin-bottom: 12px;
+}
+.transfer_description p {
+    margin-bottom: 0;
+}
+.transfer_buttons{
+    display: flex;
+    flex-shrink: 0;
+}
+
+
+
+/************ Sell ************/
+.sell {
+    color: #fff;
+    background-color: #27AE60;
+}
+
+
 
 /************ FOOTER ************/
 .footer {
