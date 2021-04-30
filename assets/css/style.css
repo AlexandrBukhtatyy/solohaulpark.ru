@@ -562,11 +562,27 @@ section.gray {
 }
 .services .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 .services .grid_cell {}
+@media (min-width: 576px) {}
 
+@media (min-width: 768px) {
+    .services .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .services .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
 /************ CARD ************/
 .card {
     display: flex;
@@ -591,12 +607,11 @@ section.gray {
     align-items: center;
 }
 .card_image.effect-chico img {
-    transition: opacity 0.35s, transform 0.35s;
+    transition: transform 0.35s;
     transform: scale(1.2);
 }
 
 .card:hover .card_image.effect-chico img {
-    opacity: 0.5;
     transform: scale(1.1);
 }
 .card_content {
@@ -750,11 +765,27 @@ section.gray {
 }
 .individual-programs  .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 .individual-programs  .grid_cell {}
+@media (min-width: 576px) {}
 
+@media (min-width: 768px) {
+    .individual-programs .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .individual-programs .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
 /************ Sell ************/
 .sell {
     color: #fff;
@@ -795,6 +826,7 @@ section.gray {
 .sell_content {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 .sell_content .title {
     margin-bottom: 25px;
@@ -810,7 +842,7 @@ section.gray {
     .sell .divider {
         height: 114px;
         width: 1px;
-        margin: 0px 20px;
+        margin: 0px 40px;
     }
     .info {
         grid-template-columns: 1fr 1fr;
