@@ -25,7 +25,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: "hello webpack",
-            template: "./src/404.html",
+            template: "./src/index.html",
             // chunks: ['main']
         }),
         new CopyPlugin({
