@@ -337,11 +337,19 @@ section.green {
     justify-content: space-between;
     height: 100%;
 }
+.header .icon.icon--solohaul-logo {
+    width: 36px;
+    height: 48px;
+}
 @media (min-width: 576px) {}
 @media (min-width: 768px) {}
 @media (min-width: 992px) {
     .header {
         height: 80px;
+    }
+    .header .icon.icon--solohaul-logo {
+        width: 49px;
+        height: 64px;
     }
 }
 @media (min-width: 1200px) {
@@ -1051,11 +1059,71 @@ section.green {
     align-items: center;
 }
 
+.wrapper.wrapper--socials,
+.wrapper.wrapper--payments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+}
+
+.wrapper.wrapper--socials {
+    margin-bottom: 36px;
+}
+
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .footer_first .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-@media (min-width: 992px) {}
+    .footer_first .col.col--special {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer_first .phone {
+        width: 100%;
+    }
+
+    .footer_first .col {
+        align-items: flex-start;
+        /* text-align: left; */
+    }
+
+    .footer .address, .footer .office-hours {
+        text-align: left;
+    }
+
+    .wrapper.wrapper--socials,
+    .wrapper.wrapper--payments{
+        align-items: flex-start;
+    }
+
+    .footer_second .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer_first .container {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .footer_first .col.col--special {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .wrapper.wrapper--socials {
+        margin-bottom: 32px;
+    }
+}
 
 @media (min-width: 1200px) {
     .footer .address,
@@ -1073,6 +1141,7 @@ section.green {
     .footer_second .link:not(:last-child) {
         margin-bottom: 0px;
     }
+
 }
 
 @media (min-width: 1400px) {}
@@ -1094,7 +1163,7 @@ section.green {
     justify-content: space-between;
     width: 100%;
     max-width: 320px;
-    margin-bottom: 36px;
+    /*margin-bottom: 36px;*/
     transition: color 0.35s;
 }
 
@@ -1136,9 +1205,7 @@ section.green {
     height: auto;
     margin-bottom: 40px;
 }
-.not-found_description .title {
-    text-align: center;
-}
+.not-found_description .title,
 .not-found_description p {
     text-align: center;
 }
@@ -1152,6 +1219,10 @@ section.green {
     }
     .not-found_picture {
         margin-right: 40px;
+    }
+    .not-found_description .title,
+    .not-found_description p {
+        text-align: left;
     }
 }
 
