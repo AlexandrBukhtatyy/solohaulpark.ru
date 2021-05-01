@@ -181,6 +181,83 @@ section.gray {
     text-decoration: none;
 }
 
+/************ Icons ************/
+.icon.icon--solohaul-logo {
+    width: 49px;
+    height: 64px;
+}
+.icon.icon--play {
+    width: 90px;
+    height: 90px;
+}
+.icon.icon--weather {
+    width: 30px;
+    height: 26px;
+}
+.icon.icon--arrow-right {
+    width: 11px;
+    height: 8px;
+}
+.icon.icon--transfer {
+    width: 106px;
+    height: 73px;
+}
+.icon.icon--place {
+    width: 30px;
+    height: 30px;
+}
+.icon.icon--wall-clock {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--hotel-bell {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--location {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--parking-sign {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--facebook {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--vk {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--youtube {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--instagram {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--ok {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--twitter {
+    width: 40px;
+    height: 40px;
+}
+.icon.icon--visa {
+    width: 90px;
+    height: 40px;
+}
+.icon.icon--mastercard {
+    width: 90px;
+    height: 40px;
+}
+.icon.icon--mir {
+    width: 90px;
+    height: 40px;
+}
 
 /************ Logo ************/
 .logo {}
