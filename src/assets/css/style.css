@@ -49,6 +49,7 @@ body {
     height: 100%;
     min-height: 100%;
     font-family: 'Montserrat';
+    font-size: 17px;
     line-height: 1.2em;
 }
 body {
@@ -84,6 +85,10 @@ body {
 
 section.gray {
     background-color: #F4F7F9;
+}
+
+section.green {
+    background-color: #27AE60;
 }
 
 .container {
@@ -180,15 +185,23 @@ section.gray {
     color: inherit;
     text-decoration: none;
 }
+.link.primary {
+    color: #27AE60;
+}
+.link.primary:hover {
+    color: #1A8748;
+}
 
 /************ Icons ************/
 .icon.icon--solohaul-logo {
     width: 49px;
     height: 64px;
+    color: #FFFFFF;
 }
 .icon.icon--play {
     width: 90px;
     height: 90px;
+    color: #FFFFFF;
 }
 .icon.icon--weather {
     width: 30px;
@@ -205,46 +218,57 @@ section.gray {
 .icon.icon--place {
     width: 30px;
     height: 30px;
+    color: #FFFFFF;
 }
 .icon.icon--wall-clock {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--hotel-bell {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--location {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--parking-sign {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--facebook {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--vk {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--youtube {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--instagram {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--ok {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--twitter {
     width: 40px;
     height: 40px;
+    color: #FFFFFF;
 }
 .icon.icon--visa {
     width: 90px;
@@ -558,6 +582,10 @@ section.gray {
     width: 90px;
     height: 90px;
     cursor: pointer;
+    color: #FFFFFF;
+}
+.hero_play:hover {
+    color: #27AE60;
 }
 
 @media (min-width: 576px) {}
@@ -1002,6 +1030,7 @@ section.gray {
 .footer_second {
     padding-top: 30px;
     padding-bottom: 60px;
+    font-size: 15px;
 }
 .footer_second .link {
     color: #828282;
@@ -1047,6 +1076,18 @@ section.gray {
 }
 
 @media (min-width: 1400px) {}
+
+
+/************ GALLERY ************/
+.gallery {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+/************ CONTACT FORM ************/
+.contact-form {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
 /************ SOCIALS ************/
 .socials {
     display: flex;
@@ -1054,7 +1095,16 @@ section.gray {
     width: 100%;
     max-width: 320px;
     margin-bottom: 36px;
+    transition: color 0.35s;
 }
+
+.socials .socials_item .icon {
+    color: #FFFFFF;
+}
+.socials .socials_item:hover .icon {
+    color: #27AE60;
+}
+
 
 
 /************ PAYMENT-METHODS ************/
@@ -1064,3 +1114,51 @@ section.gray {
     width: 100%;
     max-width: 320px;
 }
+
+/************ 404 ************/
+.not-found {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 70px 0px;
+}
+.not-found .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1070px;
+}
+.not-found_picture {
+    width: 100%;
+    max-width: 358px;
+    height: auto;
+    margin-bottom: 40px;
+}
+.not-found_description .title {
+    text-align: center;
+}
+.not-found_description p {
+    text-align: center;
+}
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .not-found .container {
+        flex-direction: row;
+    }
+    .not-found_picture {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .not-found_picture {
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1400px) {}
