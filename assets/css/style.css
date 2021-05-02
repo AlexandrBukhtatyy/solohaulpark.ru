@@ -1500,7 +1500,7 @@ section.green {
     transition: color 0.35s;
 }
 
-.article:hover .article_button {
+.article_button:hover {
     text-decoration: none;
     color: #27AE60;
 }
