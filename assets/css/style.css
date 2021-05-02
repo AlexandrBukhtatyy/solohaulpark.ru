@@ -744,8 +744,8 @@ section.green {
 }
 
 .pagination_btn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -770,12 +770,7 @@ section.green {
 @media (min-width: 576px) {
 }
 
-@media (min-width: 768px) {
-    .pagination_btn {
-        width: 40px;
-        height: 40px;
-    }
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
 }
@@ -1523,7 +1518,6 @@ section.green {
     .article {
         height: 300px;
     }
-
     .article_image {
         display: block;
         width: 190px;
