@@ -1571,6 +1571,9 @@ section.green {
     border: 0px solid transparent;
     border-radius: 8px;
 }
+.article-wrapper p:last-child {
+    margin-bottom: 0px;
+}
 
 @media (min-width: 992px) {
 
