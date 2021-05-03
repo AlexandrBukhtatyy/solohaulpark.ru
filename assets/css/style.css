@@ -1675,6 +1675,169 @@ section.green {
 }
 
 
+/************ SERVICES PAGE ************/
+.services-page {
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+.services-page h1,
+.services-page h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.services-page p {
+    font-size: 15px;
+}
+.services-page small {
+    font-size: 13px;
+}
+.price-list {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.price-list_item+.price-list_item {
+    margin-top: 30px
+}
+
+.price-list_item .price-list_item-desc {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    position: relative
+}
+
+.price-list_item-desc .price-list_item-title {
+    margin-bottom: 0;
+    margin-right: 30px;
+    font-weight: 600;
+}
+.price-list_item-desc .price-list_item-title span {
+    background-color: #FFFFFF;
+}
+
+.price-list_item .price-list_item-desc:before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    border-bottom: 3px dotted #333;
+    bottom: 3px
+}
+
+.price-list_item .price-list_item-title {
+    position: relative;
+    max-width: 90%;
+    font-size: 15px;
+}
+.price-list_item .price-list_item-annotation {
+    font-size: 13px;
+}
+.price-list_item .price-list_item-cost {
+    background-color: #fff;
+    position: relative;
+    font-weight: 600;
+    flex-shrink: 0
+}
+
+.discount-list {
+    margin-bottom: 40px;
+}
+.discount-list_item {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    position: relative
+}
+
+.discount-list_item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    border-bottom: 3px dotted #333
+}
+
+.discount-list .discount-list_item-title {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 17px;
+    max-width: 90%
+}
+
+.discount-list .discount-list_item-cost {
+    background-color: #fff;
+    position: relative;
+    font-weight: 600;
+    flex-shrink: 0
+}
+
+.discount-list .discount-list_item-title span {
+    background-color: #fff
+}
+
+.discount-list_item+.discount-list_item {
+    margin-top: 30px
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .services-page p {
+        font-size: 17px;
+    }
+    .services-page small {
+        font-size: 15px;
+    }
+    .services-page {
+        padding-top: 30px;
+        padding-bottom: 90px;
+    }
+    .services-page h1,
+    .services-page h2 {
+        font-size: 32px;
+    }
+    .services-page p {
+        font-size: 15px;
+    }
+    .price-list {
+        padding-left: 30px;
+    }
+    .price-list_item .price-list_item-title {
+        font-size: 17px;
+        max-width: 80%;
+    }
+    .price-list_item .price-list_item-annotation {
+        font-size: 15px;
+    }
+    .discount-list {
+        padding-left: 30px;
+    }
+    .discount-list .discount-list_item-title {
+        max-width: 80%;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+    .services-page {
+        padding-top: 30px;
+        padding-bottom: 90px;
+    }
+    .price-list {
+        margin-bottom: 80px;
+        padding-left: 40px;
+    }
+
+    .discount-list {
+        padding-left: 30px;
+    }
+}
 /************ 404 ************/
 .not-found {
     display: flex;
