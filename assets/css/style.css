@@ -1750,6 +1750,10 @@ section.green {
     position: relative
 }
 
+.discount-list_item.discount-list_item.discount-list_item--without-border:before {
+    display: none;
+}
+
 .discount-list_item:before {
     content: '';
     display: block;
