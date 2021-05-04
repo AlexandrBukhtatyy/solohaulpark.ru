@@ -197,6 +197,25 @@ section.green {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+.btn.btn--circle.btn--outline.btn--icon.btn--primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #27AE60;
+    border-radius: 50%;
+    color: #27AE60;
+    width: 35px;
+    height: 35px;
+    padding: 0px;
+}
+
+.btn.btn--circle.btn--outline.btn--icon.btn--primary:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #27AE60;
+}
+
 /************ Link ************/
 .link,
 .link:hover {
@@ -926,22 +945,6 @@ section.green {
     padding: 10px 20px 20px;
 }
 
-.card_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #27AE60;
-    border-radius: 50%;
-    color: #27AE60;
-    width: 35px;
-    height: 35px;
-}
-
-.card:hover .card_button {
-    cursor: pointer;
-    color: #FFFFFF;
-    background-color: #27AE60;
-}
 
 /************ CARD MODS ************/
 /** CARD MOD service **/
@@ -1064,11 +1067,107 @@ section.green {
 
 .programs .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
-.programs .grid_cell {
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .programs .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "first first first first"
+            "second second third third";
+    }
+    .programs .grid > .grid_cell:nth-child(1) {
+        grid-area: first;
+    }
+
+    .programs .grid > .grid_cell:nth-child(2) {
+        grid-area: second;
+    }
+
+    .programs .grid > .grid_cell:nth-child(3) {
+        grid-area: third;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    .programs .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+            "first first second third";
+    }
+}
+
+/************ PROGRAMM CARD ************/
+.program-card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #00000038;
+    display: block;
+    z-index: 1;
+}
+
+.program-card_image.effect-milo {
+    overflow: hidden;
+    height: 100%;
+}
+
+.program-card_image img {
+    max-width: none;
+    height: 100%;
+}
+
+.program-card {
+    max-height: 290px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    border: 0px solid transparent;
+    cursor: pointer;
+}
+
+.program-card_content-wrapper {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.btn.btn--circle.btn--outline.btn--icon.btn--primary {
+    flex-shrink: 0;
+}
+
+.program-card_title {
+    margin-bottom: 10px;
+}
+
+.program-card_description {
+    margin-bottom: 0px;
+}
+
+.program-card_content {
+    padding-right: 10px;
 }
 
 /************ individual-programs ************/
@@ -1129,20 +1228,17 @@ section.green {
 
 .info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
 }
 
 .info_item {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
 }
 
 .info_item .info_item-icon {
-    margin-right: 0px;
+    margin-right: 20px;
     margin-bottom: 10px;
 }
 
@@ -1176,16 +1272,6 @@ section.green {
     .info {
         grid-template-columns: 1fr 1fr;
         grid-gap: 35px;
-    }
-
-    .info_item {;
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .info_item .info_item-icon {
-        margin-right: 20px;
-        margin-bottom: 0px;
     }
 
     .sell_content .title {
@@ -1571,6 +1657,7 @@ section.green {
     border: 0px solid transparent;
     border-radius: 8px;
 }
+
 .article-wrapper p:last-child {
     margin-bottom: 0px;
 }
@@ -1680,22 +1767,27 @@ section.green {
     padding-top: 10px;
     padding-bottom: 70px;
 }
+
 .services-page h1,
 .services-page h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 .services-page p {
     font-size: 15px;
 }
+
 .services-page small {
     font-size: 13px;
 }
+
 .price-list {
     margin-top: 30px;
     margin-bottom: 70px;
 }
-.price-list_item+.price-list_item {
+
+.price-list_item + .price-list_item {
     margin-top: 30px
 }
 
@@ -1712,6 +1804,7 @@ section.green {
     margin-right: 30px;
     font-weight: 600;
 }
+
 .price-list_item-desc .price-list_item-title span {
     background-color: #FFFFFF;
 }
@@ -1729,9 +1822,11 @@ section.green {
     max-width: 90%;
     font-size: 15px;
 }
+
 .price-list_item .price-list_item-annotation {
     font-size: 13px;
 }
+
 .price-list_item .price-list_item-cost {
     background-color: #fff;
     position: relative;
@@ -1742,6 +1837,7 @@ section.green {
 .discount-list {
     margin-bottom: 40px;
 }
+
 .discount-list_item {
     display: flex;
     align-items: flex-end;
@@ -1782,9 +1878,10 @@ section.green {
     background-color: #fff
 }
 
-.discount-list_item+.discount-list_item {
+.discount-list_item + .discount-list_item {
     margin-top: 30px
 }
+
 @media (min-width: 576px) {
 }
 
@@ -1792,33 +1889,42 @@ section.green {
     .services-page p {
         font-size: 17px;
     }
+
     .services-page small {
         font-size: 15px;
     }
+
     .services-page {
         padding-top: 30px;
         padding-bottom: 90px;
     }
+
     .services-page h1,
     .services-page h2 {
         font-size: 32px;
     }
+
     .services-page p {
         font-size: 15px;
     }
+
     .price-list {
         padding-left: 30px;
     }
+
     .price-list_item .price-list_item-title {
         font-size: 17px;
         max-width: 80%;
     }
+
     .price-list_item .price-list_item-annotation {
         font-size: 15px;
     }
+
     .discount-list {
         padding-left: 30px;
     }
+
     .discount-list .discount-list_item-title {
         max-width: 80%;
         font-size: 24px;
@@ -1833,6 +1939,7 @@ section.green {
         padding-top: 30px;
         padding-bottom: 90px;
     }
+
     .price-list {
         margin-bottom: 80px;
         padding-left: 40px;
@@ -1842,6 +1949,7 @@ section.green {
         padding-left: 30px;
     }
 }
+
 /************ 404 ************/
 .not-found {
     display: flex;
