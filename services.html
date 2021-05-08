@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="./">
+
+    <!-- TODO -->
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- TODO -->
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="twitter:description" content=""/>
+    <link rel="image_src" href=""/>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krishdevdb/reseter.css/css/reseter.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- HEADER START-->
+<div class="header">
+    <div class="container">
+        <!-- LOGO START-->
+        <a href="#todo" class="logo link">
+            <svg class="logo_icon icon icon--solohaul-logo">
+                <use xlink:href="assets/svg/sprite.svg#solohaul-logo"></use>
+            </svg>
+            <img class="logo_title" src="assets/img/solohaul-park.png" alt="#todo">
+        </a>
+        <!-- LOGO END-->
+        <!-- MENU START-->
+        <nav class="menu">
+            <div class="menu_item">
+                <a class="menu_item-link link" href="#todo">Услуги</a>
+                <div class="menu">
+                    <a class="menu_item-link link" href="#todo">Открытие «AERO PARK»</a>
+                    <a class="menu_item-link link" href="#todo">Полет на дерижабле</a>
+                    <a class="menu_item-link link" href="#todo">Свободный полет на воздушном шаре</a>
+                    <a class="menu_item-link link" href="#todo">ЗИП-Лайн</a>
+                    <a class="menu_item-link link" href="#todo">Трофи-экскурсия на настоящем БТР</a>
+                    <a class="menu_item-link link" href="#todo">Троллейный парк</a>
+                    <a class="menu_item-link link" href="#todo">Тир</a>
+                    <a class="menu_item-link link" href="#todo">Рафтинг (Сплав по горной реке)</a>
+                    <a class="menu_item-link link" href="#todo">Трансфер</a>
+                    <a class="menu_item-link link" href="#todo">Подарочные сертификаты</a>
+                    <a class="menu_item-link link" href="#todo">Корпоративные мероприятия</a>
+                </div>
+            </div>
+            <div class="menu_item">
+                <a class="menu_item-link link" href="#todo">Цены</a>
+            </div>
+            <div class="menu_item">
+                <a class="menu_item-link link" href="#todo">Отель</a>
+            </div>
+            <div class="menu_item">
+                <a class="menu_item-link link" href="#todo">Ресторан</a>
+            </div>
+            <div class="menu_item">
+                <a class="menu_item-link link" href="#todo">О нас</a>
+                <div class="menu">
+                    <a class="menu_item-link link" href="#todo">Новости</a>
+                    <a class="menu_item-link link" href="#todo">О парке</a>
+                </div>
+            </div>
+            <div class="menu_item">
+                <a class="menu_item-link link" href="#todo">Контакты</a>
+            </div>
+        </nav>
+        <!-- MENU END-->
+        <!-- PHONE START-->
+        <div class="phone">
+            <a href="#todo" class="phone_number link">+7 928 449-88-85</a>
+            <span class="phone_office-hours">Вт — вc., с 12:00 до 18:00</span>
+        </div>
+        <!-- PHONE END-->
+        <!-- BURGER START-->
+        <div id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- BURGER END-->
+    </div>
+</div>
+<!-- HEADER END-->
+<!-- HERO START-->
+<header class="hero hero--services">
+    <div class="container">
+        <!-- BREADCRUMBS START-->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs_item"><a href="#todo">Главная</a></div>
+            <div class="breadcrumbs_item">
+                <svg class="icon icon--chevron-right">
+                    <use xlink:href="assets/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </div>
+            <div class="breadcrumbs_item breadcrumbs_item--active"><span>О парке</span></div>
+        </div>
+        <!-- BREADCRUMBS END -->
+        <div class="hero_content">
+            <h1 class="title">Услуги</h1>
+            <p class="sub-title">Солохаул парк — это удивительный мир дикой, нетронутой природы в часе езды от Сочи. Если вы решили провести время с семьёй и получить самые незабываемые впечатления от пребывания на свежем воздухе, то добро пожаловать в парк «Солохаул»! Скучно не будет никому!</p>
+            <div class="btn btn--primary">Купить билеты</div>
+        </div>
+        <div class="hero_play-wrapper">
+            <svg class="hero_play icon icon--play">
+                <use xlink:href="assets/svg/sprite.svg#play"></use>
+            </svg>
+        </div>
+        <div class="weather-widget">
+            <div class="weather-widget_title"><span>Сочи,</span> <span>суббота</span></div>
+            <div class="weather-widget_data">
+                <svg class="weather-widget_icon icon icon--weather">
+                    <use xlink:href="assets/svg/sprite.svg#weather-cloudly"></use>
+                </svg>
+                <span class="weather-widget_temperature">+21 С</span>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HERO END-->
+<!-- CONTENT START-->
+<main class="content">
+    <!-- SERVICES START-->
+    <section class="services">
+        <div class="container">
+            <h2>Солохаул парк</h2>
+            <div class="grid">
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/balloon.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время полета: 1 час</div>
+                        <h3 class="card_title">Свободные полёты на воздушном шаре</h3>
+                        <p class="card_description">
+                            В нашем парке это не просто полёт, а целая церемония посвящения, после которой вы получаете
+                            сертификат с отметкой высоты и длительности полёта
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/airship.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время полета: 20-60 минут</div>
+                        <h3 class="card_title">Полет над долиной на дерижабле</h3>
+                        <p class="card_description">
+                            Солохаул Парк творит настоящие чудеса — теперь мы будем вас катать на Дирижабле.
+                            Единственном в России!
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/zip-line.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время полета: 1 минут</div>
+                        <h3 class="card_title">Зиплайн протяженностью в 1 км</h3>
+                        <p class="card_description">
+                            Самый длинный в России троллей. Длина троллея (зиплайна) составляет 1 километр. На целую
+                            минуту вы сможете забыть о земле и парить на высоте 200 м.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/btr.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время экскурсии: 30 минут</div>
+                        <h3 class="card_title">Трофи-экскурсия на настоящем БТР</h3>
+                        <p class="card_description">
+                            Новый вид экстрим-поездок в горы — прогулки по горным хребтам на бронетранспортёре!
+                            Приглашаем отправиться на трофи — экскурсию на БТР-кабриолете.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/rafting.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время экскурсии: 2 часа</div>
+                        <h3 class="card_title">Рафтинг (сплав по горной реке)</h3>
+                        <p class="card_description">
+                            В нашем парке это не просто полёт, а целая церемония посвящения, после которой вы получаете
+                            сертификат с отметкой высоты и длительности полёта
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/trolley-park.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время: До окончания трассы</div>
+                        <h3 class="card_title">Троллейный парк длинной в 1 км</h3>
+                        <p class="card_description">
+                            Предлагаем попробовать самый длинный в России троллей! Длина троллея (зиплайна) составляет 1
+                            километр. На целую минуту вы сможете забыть о земле и наслаждаться прекрасными вида нашего
+                            парка.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/shooting-range.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Количество выстрелов: 7-50</div>
+                        <h3 class="card_title">Тир на территории «Солохаул» парка</h3>
+                        <p class="card_description">
+                            За долгие трудовые рабочие будни накопился пар? Тогда вам по вкусу придется наш тир.
+                            Выпустите пар, отстрелявшись по баночкам.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/corporate-events.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время: По договоренности</div>
+                        <h3 class="card_title">Корпоративные мероприятия</h3>
+                        <p class="card_description">
+                            Хотите сменить приевшуюся обстановку, организовать своим работника хороший отдых, вне офиса?
+                            Коллектив «Солохаул» парка имеет богатый опыт в организации различных мероприятий.
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--service grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/services/gift-certificates.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <div class="card_hint">Время: До окончания трассы</div>
+                        <h3 class="card_title">Подарочные сертификаты на услуги</h3>
+                        <p class="card_description">
+                            Приобретите своим родным, близким или друзьям в подарок один из сертификатов на услуги
+                            нашего парка
+                        </p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES END-->
+    <!-- TRANSFER START-->
+    <section class="transfer">
+        <div class="container">
+            <div class="transfer_content">
+                <svg class="transfer_logo icon icon--transfer">
+                    <use xlink:href="assets/svg/sprite.svg#transfer"></use>
+                </svg>
+                <div class="transfer_description">
+                    <h3 class="title">Организация трансфера</h3>
+                    <p>В случае необходимоти, у нас имеется услуга по организации перевозок до места назначения</p>
+                </div>
+            </div>
+            <div class="transfer_buttons">
+                <div class="btn btn--outline">Оставить заявку</div>
+                <a class="btn btn--link" href="geo:43.8071413,39.6113559?z=8">
+                    <svg class="icon icon--place">
+                        <use xlink:href="assets/svg/sprite.svg#place"></use>
+                    </svg>
+                    <div class="btn_content">Как доехать?</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSFER END-->
+    <!-- PROGRAMMS START-->
+    <section class="programs">
+        <div class="container">
+            <h2 class="title">Программы</h2>
+            <div class="grid">
+                <div class="program-card grid_cell">
+                    <figure class="program-card_image effect-milo">
+                        <img class="picture" src="assets/img/content/landing/day-in-a-park.png" alt="#todo">
+                    </figure>
+                    <div class="program-card_content-wrapper">
+                        <div class="program-card_content">
+                            <h3 class="program-card_title">Проведи день в нашем парке</h3>
+                            <p class="program-card_description">
+                                Вам не надо думать о том, чем будете заниматься. Все развлечения мы берём на себя.
+                            </p>
+                        </div>
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card grid_cell">
+                    <figure class="program-card_image effect-milo">
+                        <img class="picture" src="assets/img/content/landing/children.png" alt="#todo">
+                    </figure>
+                    <div class="program-card_content-wrapper">
+                        <div class="program-card_content">
+                            <h3 class="program-card_title">Детям</h3>
+                            <p class="program-card_description">
+                                Для самых маленьких гостей
+                            </p>
+                        </div>
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card grid_cell">
+                    <figure class="program-card_image effect-milo">
+                        <img class="picture" src="assets/img/content/landing/adult.png" alt="#todo">
+                    </figure>
+                    <div class="program-card_content-wrapper">
+                        <div class="program-card_content">
+                        <h3 class="program-card_title">Взрослым</h3>
+                        <p class="program-card_description">
+                            Вам точно не будет скучно
+                        </p>
+                        </div>
+                        <div class="btn btn--circle btn--outline btn--icon btn--primary">
+                            <svg class="icon icon--arrow-right">
+                                <use xlink:href="assets/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROGRAMMS END-->
+    <!-- INDIVIDUAL-PROGRAMMS START-->
+    <section class="individual-programs gray">
+        <div class="container">
+            <h2 class="title">Индивидуальные программы</h2>
+            <div class="grid">
+                <div class="card card--individual-program grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/individual-plans/adrenalin.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <h3 class="card_title">Адреналин</h3>
+                        <p class="card_description">
+                            Для любителей экстремального отдыха
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--individual-program grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/individual-plans/romantic.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <h3 class="card_title">Романтика</h3>
+                        <p class="card_description">
+                            Отдохните со своей второй половинкой
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--individual-program grid_cell">
+                    <figure class="card_image effect-chico">
+                        <img class="picture" src="assets/img/content/individual-plans/relax.jpg" alt="#todo">
+                    </figure>
+                    <div class="card_content">
+                        <h3 class="card_title">Релакс</h3>
+                        <p class="card_description">
+                            Для тех кто любит активно работать и спокойно отдыхать
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INDIVIDUAL-PROGRAMMS END-->
+    <!-- SELL END-->
+    <section class="sell">
+        <div class="container">
+            <div class="info">
+                <div class="info_item">
+                    <svg class="info_item-icon icon icon--wall-clock">
+                        <use xlink:href="assets/svg/sprite.svg#wall-clock"></use>
+                    </svg>
+                    <div class="info_item-text">Работаем вт-вс, с 12:00 до 18:00</div>
+                </div>
+                <div class="info_item">
+                    <svg class="info_item-icon icon icon--hotel-bell">
+                        <use xlink:href="assets/svg/sprite.svg#hotel-bell"></use>
+                    </svg>
+                    <div class="info_item-text">Комфортные номера для проживания</div>
+                </div>
+                <div class="info_item">
+                    <svg class="info_item-icon icon icon--location">
+                        <use xlink:href="assets/svg/sprite.svg#location"></use>
+                    </svg>
+                    <div class="info_item-text">Удобное расположение парка</div>
+                </div>
+                <div class="info_item">
+                    <svg class="info_item-icon icon icon--parking-sign">
+                        <use xlink:href="assets/svg/sprite.svg#parking-sign"></use>
+                    </svg>
+                    <div class="info_item-text">Бесплатная парковка для посетителей</div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="sell_content">
+                <h3 class="title">Мы всегда рады вам</h3>
+                <div class="btn btn--outline">Купить билет</div>
+            </div>
+        </div>
+    </section>
+    <!-- SELL END-->
+    <!-- CONTACT FORM START-->
+    <section class="contact-form gray">
+        <div class="container">
+            <div id="contact-map" class="contact-form_map"></div>
+            <div class="contact-form_form">
+                <h2 class="title h3">Остались вопросы?</h2>
+                <form class="form">
+                    <div class="form_field">
+                        <input type="text" name="size" id="name">
+                        <label for="name">Имя</label>
+                    </div>
+                    <div class="form_field form_field--not-empty">
+                        <input type="text" name="size" id="email">
+                        <label for="email">Электронная почта</label>
+                    </div>
+                    <div class="form_field form_field--success">
+                        <input type="text" name="size" id="phone">
+                        <label for="phone">Телефон</label>
+                    </div>
+                    <div class="form_field form_field--error">
+                        <input type="text" name="size" id="message">
+                        <label for="message">Вопрос</label>
+                        <div class="form_field-error">Обязательно поле</div>
+                    </div>
+                </form>
+                <button class="contact-form_btn btn btn--inline btn--primary">Отправить</button>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT FORM END-->
+</main>
+<!-- CONTENT END-->
+<!-- FOOTER START-->
+<footer class="footer">
+    <div class="footer_first">
+        <div class="container">
+            <div class="col">
+                <h3>Наш адрес</h3>
+                <p class="address">
+                    Сочи, с. Солохаул,<br>
+                    ул. Ноябрьская, дом 15Д
+                </p>
+                <p class="office-hours">Вт — вc., с 12:00 до 18:00</p>
+            </div>
+
+            <div class="col">
+                <h3>Информация</h3>
+                <div class="link-wrapper">
+                    <a class="link link--navigation" href="#todo">О парке</a>
+                </div>
+                <div class="link-wrapper">
+                    <a class="link link--navigation" href="#todo">Фотогалерея</a>
+                </div>
+                <div class="link-wrapper">
+                    <a class="link link--navigation" href="#todo">Контакты</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <h3>Цены</h3>
+                <div class="link-wrapper">
+                    <a class="link link--navigation" href="#todo">Билеты</a>
+                </div>
+                <div class="link-wrapper">
+                    <a class="link link--navigation" href="#todo">Услуги</a>
+                </div>
+                <div class="link-wrapper">
+                    <a class="link link--navigation" href="#todo">Цены и скидки</a>
+                </div>
+            </div>
+
+            <div class="col col--special">
+                <div class="phone">
+                    <a href="#todo" class="phone_number link">+7 928 449-88-85</a>
+                </div>
+
+                <div class="wrapper wrapper--socials">
+                    <h3 class="title title--socials">Мы в соц сетях</h3>
+                    <div class="socials">
+                        <a class="socials_item" href="#todo">
+                            <svg class="icon icon--facebook">
+                                <use xlink:href="assets/svg/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="socials_item" href="#todo">
+                            <svg class="icon icon--vk">
+                                <use xlink:href="assets/svg/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="socials_item" href="#todo">
+                            <svg class="icon icon--youtube">
+                                <use xlink:href="assets/svg/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                        <a class="socials_item" href="#todo">
+                            <svg class="icon icon--instagram">
+                                <use xlink:href="assets/svg/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                        <a class="socials_item" href="#todo">
+                            <svg class="icon icon--ok">
+                                <use xlink:href="assets/svg/sprite.svg#ok"></use>
+                            </svg>
+                        </a>
+                        <a class="socials_item" href="#todo">
+                            <svg class="icon icon--twitter">
+                                <use xlink:href="assets/svg/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="wrapper wrapper--payments">
+                    <h3 class="title title--payment-methods">Способы оплаты</h3>
+                    <div class="payment-methods">
+                        <svg class="payment-methods_item icon icon--visa">
+                            <use xlink:href="assets/svg/sprite.svg#visa"></use>
+                        </svg>
+                        <svg class="payment-methods_item icon icon--mastercard">
+                            <use xlink:href="assets/svg/sprite.svg#mastercard"></use>
+                        </svg>
+                        <svg class="payment-methods_item icon icon--mir">
+                            <use xlink:href="assets/svg/sprite.svg#mir"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_second">
+        <div class="container">
+            <a class="link" href="#todo">© Солохаул парк, 2021</a>
+            <a class="link" href="#todo">Правила парка</a>
+            <a class="link" href="#todo">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER END-->
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+<script src="assets/js/index.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq50xkGwbiIwG2_tjPl0tmuzoEJr7Sr14&callback=initMap">
+</script>
+</body>
+</html>
