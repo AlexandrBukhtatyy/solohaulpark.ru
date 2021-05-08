@@ -2098,10 +2098,12 @@ section.green {
 /************ CONTACTS FORM SECTION ************/
 .contact-form .container {
     display: flex;
+    flex-direction: column-reverse;
 }
 .contact-form_map {
     flex-grow: 1;
-    margin-right: 20px;
+    max-width: 100%;
+    min-height: 400px;
     border: 0px;
     border-radius: 8px;
 }
@@ -2110,11 +2112,18 @@ section.green {
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 0;
-    max-width: 460px;
-    padding: 40px;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 20px;
     border: 0px;
     border-radius: 8px;
+    background-color: #fff;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+}
+.contact-form_form .title {
+    text-align: center;
+    margin-bottom: 10px;
 }
 .form {
     margin-bottom: 40px;
@@ -2125,6 +2134,32 @@ section.green {
 .contact-form_btn {
     align-self: center;
 }
+
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {
+    .contact-form .container {
+        flex-direction: row;
+    }
+    .contact-form_map {
+        margin-right: 20px;
+    }
+    .contact-form_form {
+        align-items: stretch;
+        max-width: 460px;
+        padding: 40px;
+        margin-bottom: 0px;
+    }
+    .contact-form_form .title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {}
 
 /************ FORM ************/
 .form_field {
