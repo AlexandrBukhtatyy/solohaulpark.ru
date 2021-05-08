@@ -184,6 +184,8 @@ section.green {
 }
 
 .btn.btn--link {
+    color: #FFFFFF;
+    text-decoration: none;
     border: 0px;
     padding: 0px 30px 0px 20px;
 }
@@ -654,6 +656,12 @@ section.green {
     background-size: cover;
     background-position: bottom;
 }
+.hero.hero--landing {
+    background-image: url("../img/content/main-hero-bg.jpg");
+}
+.hero.hero--about {
+    background-image: url("../img/content/about/about-hero-image.jpg");
+}
 
 .hero .container {
     position: relative;
@@ -716,24 +724,30 @@ section.green {
     bottom: 50px;
 }
 
-.weather-widget_title {
+.weather-widget_title span:first-child {
+    font-size: 24px;
 }
 
 .weather-widget_data {
+    display: flex;
+    align-items: flex-end;
 }
 
 .weather-widget_icon {
+    margin-right: 10px;
 }
 
 .weather-widget_temperature {
+    font-size: 24px;
 }
 
 
 /************ BREADCRUMBS ************/
 .breadcrumbs {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     height: 60px;
+    padding: 20px 0px;
     font-size: 15px;
 }
 
@@ -741,19 +755,37 @@ section.green {
     display: flex;
     align-items: center;
 }
-
-.breadcrumbs_item--active {
-    color: #27AE60;
+.breadcrumbs_item .icon.icon--chevron-right {
+    width: 5px;
+    height: 8px;
 }
-
 .breadcrumbs_item:not(:last-child) {
     margin-right: 10px;
 }
 
-.breadcrumbs_item > a {
+.breadcrumbs_item--active {
     color: #333333;
 }
 
+.breadcrumbs_item > a {
+    color: #27AE60;
+}
+.breadcrumbs_item > a:hover {
+    color: #27AE60;
+}
+
+.hero.hero--about .breadcrumbs {
+    position: absolute;
+    top: 0px;
+    color: #333333;
+}
+
+.hero.hero--about .breadcrumbs .breadcrumbs_item > a {
+    color: #333333;
+}
+.hero.hero--about .breadcrumbs .breadcrumbs_item > a:hover {
+    color: #27AE60;
+}
 
 /************ PAGINATION ************/
 .pagination {
@@ -2161,6 +2193,16 @@ section.green {
 
 @media (min-width: 1200px) {}
 
+/************ PARK MAP ************/
+.park-map {
+    background-color: #00b254;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.park-map .container {
+    display: flex;
+    justify-content: center;
+}
 /************ FORM ************/
 .form_field {
     position: relative;

@@ -106,7 +106,7 @@
 </div>
 <!-- HEADER END-->
 <!-- HERO START-->
-<header class="hero">
+<header class="hero hero--landing">
     <div class="container">
         <div class="hero_content">
             <h1 class="title">Открытие «AERO PARK»<br>11-13 сентября 2020 г.</h1>
@@ -371,12 +371,12 @@
             </div>
             <div class="transfer_buttons">
                 <div class="btn btn--outline">Оставить заявку</div>
-                <div class="btn btn--link">
+                <a class="btn btn--link" href="geo:43.8071413,39.6113559?z=8">
                     <svg class="icon icon--place">
                         <use xlink:href="assets/svg/sprite.svg#place"></use>
                     </svg>
                     <div class="btn_content">Как доехать?</div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -536,9 +536,29 @@
     <!-- CONTACT FORM START-->
     <section class="contact-form gray">
         <div class="container">
-            <div class="contact-form_map"></div>
+            <div id="contact-map" class="contact-form_map"></div>
             <div class="contact-form_form">
-                <h2 class="title">Остались вопросы?</h2>
+                <h2 class="title h3">Остались вопросы?</h2>
+                <form class="form">
+                    <div class="form_field">
+                        <input type="text" name="size" id="name">
+                        <label for="name">Имя</label>
+                    </div>
+                    <div class="form_field form_field--not-empty">
+                        <input type="text" name="size" id="email">
+                        <label for="email">Электронная почта</label>
+                    </div>
+                    <div class="form_field form_field--success">
+                        <input type="text" name="size" id="phone">
+                        <label for="phone">Телефон</label>
+                    </div>
+                    <div class="form_field form_field--error">
+                        <input type="text" name="size" id="message">
+                        <label for="message">Вопрос</label>
+                        <div class="form_field-error">Обязательно поле</div>
+                    </div>
+                </form>
+                <button class="contact-form_btn btn btn--inline btn--primary">Отправить</button>
             </div>
         </div>
     </section>
@@ -657,5 +677,8 @@
         crossorigin="anonymous">
 </script>
 <script src="assets/js/index.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq50xkGwbiIwG2_tjPl0tmuzoEJr7Sr14&callback=initMap">
+</script>
 </body>
 </html>
